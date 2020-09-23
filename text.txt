@@ -1,5 +1,9 @@
 is this working
 
+<<<<<<< HEAD
 Its me Jerry
 
 it's Dhiaa i think so.
+=======
+Its me Jerry. Its working for me!
+>>>>>>> 0896ad278a091e5958838abb3f2d177c17328421
