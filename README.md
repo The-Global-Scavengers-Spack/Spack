@@ -27,5 +27,5 @@ Product description: A small gadget that detects, notifies,
 corrects the users when they have a poor back posture while
 they are sitting down.
 >>>>>>> 5284214e41a9d42726349b1c5e550dec1e234464
-testing my branch Dhiaa
+
 
