@@ -1,20 +1,26 @@
 Spack
 =====
 
-Team Name: Global Scavengers.
+Team Name: Global Scavengers
 
-<<<<<<< HEAD
+HEAD
 Team Member Names:
-James - 300164059
-Jerry Nguyen - 300198368
-Jeyason Jeyaparan - 300165084
+	James - 300164059
 
-Product Name: Spack
+	Jerry Nguyen - 300198368
 
-Product description: A small gadget that detects, notifies,
-corrects the users when they have a poor back posture while
-they are sitting down.
+	Jeyason Jeyaparan - 300165084
+
+	Dhiaa Naas - 300170251
+
+Product Name: 
+	Spack
+
+Product description: 
+	A small gadget that detects, notifies,
+	corrects the users when they have a poor back posture while
+	they are sitting down.
+=======
 =======
 
 
->>>>>>> 7a8cf9603b22393b65f3492fc28803fb121d2a3b
