@@ -15,16 +15,12 @@ Team Member Names:
 	
 	Sonia Wang - 30000209
 
+
 Product Name: 
 	Spack
 
-Product description: 
-	A small gadget that detects, notifies,
-	corrects the users when they have a poor back posture while
-	they are sitting down.
-=======
-=======
 Product description: A small gadget that detects, notifies,
 corrects the users when they have a poor back posture while
 they are sitting down.
+
 
