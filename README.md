@@ -15,6 +15,8 @@ Team Member Names:
 	
 	Sonia Wang - 30000209
 
+	Justin Zoorob - 300174393 
+
 
 Product Name: 
 	Spack
