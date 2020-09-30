@@ -3,7 +3,6 @@ Spack
 
 Team Name: Global Scavengers
 
-HEAD
 Team Member Names:
 	James - 300164059
 
@@ -20,10 +19,4 @@ Product description:
 	A small gadget that detects, notifies,
 	corrects the users when they have a poor back posture while
 	they are sitting down.
-=======
-=======
-Product description: A small gadget that detects, notifies,
-corrects the users when they have a poor back posture while
-they are sitting down.
-=======
 
