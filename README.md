@@ -1,5 +1,5 @@
 Spack
-=====
+-----
 
 Team Name: Global Scavengers
 
@@ -14,6 +14,8 @@ Team Member Names:
 	Dhiaa Naas - 300170251
 	
 	Sonia Wang - 30000209
+
+	Justin Zoorob - 300174393 
 
 
 Product Name: 
