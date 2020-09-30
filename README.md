@@ -1,5 +1,5 @@
 Spack
-=====
+-----
 
 Team Name: Global Scavengers
 
