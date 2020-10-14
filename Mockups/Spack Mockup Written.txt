@@ -1,0 +1,48 @@
+Overall Look and Feel of Spack
+==============================
+
+The overall look and feel should be a good balance between pictures and words.
+We will avoid  3D buttons, but when you hover the button over it, it should light up or make the colour a lighter shade.
+The website should have a "simple straight forward" feel, and
+the user should feel confident in knowing what our product is.
+
+
+Colours
+========
+For Spack, the colour of brown shows to our users how our product helps them
+be strong, and has a nature-like feeling. The colour blue empthasizes how our
+website has a calm and fresh feeling. It also may make our users curious about
+what exactly our product is, which is what we need.
+
+
+#000000
+#B89A84
+#FFFFFF
+#454B66
+#677DB7
+
+Iconography
+==========
+We will focus on using icons that have a flat design,
+to support the feel our website is supposed to give to the user
+which is a sense of calmness, as 3-D icons may confuse our users.
+
+Typography
+==========
+Impacta - slogan and title
+Comfortaa - rest of the website
+
+We are using these fonts because it adds to our website's feeling of calmness
+as Comfortaa is a very simple font. Impacta is a more stronger font as it is more bold.
+This is important because it grabs the customer's attention to our product's name and
+slogan, hopefully making them remember it.
+
+Links
+======
+Links will not be underlined and the colour changes shade of colour.
+
+Buttons
+=======
+Buttons will be flat designed using the colours above.
+
+
