@@ -8,14 +8,17 @@
         <title>
             Product
         </title>
+        <link rel="icon" href="Logo/icon.png" sizes="32x32" type="image/png">
         <style>
             body {
-                background-color: #e6cea3;
+                /*background-color: #e6cea3;*/
+                background-color: #f8e4bf;
             }
             table {
-                width: 80%;
+                width: 78%;
                 margin-top: 20px;
-                font-size: 25px;
+                margin-right: 2%;
+                font-size: 23px;
                 background-color: #ffefd4;
                 color: #874000;
                 border-radius: 6px;
@@ -36,18 +39,56 @@
                 padding-left: 20px;
                 padding-right: 20px;
                 text-decoration: none;
-                background-color: #ffefd4;
                 color: #874000;
                 border-radius: 7px;
             }
             a:hover {
                 background: #ecd7b4;
             }
+            div {
+                margin-bottom: 30px;
+            }
+            .inline_things {
+                display: flex;
+                align-items: center
+            }
+            .product_images_right {
+                margin-right: 5%;
+                margin-left: 10%;
+                width: 26%;
+                border-radius: 40px;
+                display: inline;
+            }
+            .product_images_left {
+                margin-right: 10%;
+                margin-left: 23%;
+                width: 26%; 
+                border-radius: 40px;
+                display: inline;
+            }
+            .paragrapg_descr_left {
+                margin-left: 23%;
+                font-family: "Comfortaa", serif;
+
+            }
+            .paragrapg_descr_right {
+                margin-right: 5%;
+                font-family: "Comfortaa", serif;
+
+            }
+            .titles {
+                font-family: "Comfortaa", serif;
+                font-style: italic;
+                font-size: 35px;
+                font-weight: bold;
+            }
+
         </style>
     </head>
     <body>
-        <a href="home_page.html" style = "background-color:#e6cea3;"><img src="Logo/spack_logo.png"></a>
-        <table align = right>
+        <div style="margin-bottom: 60px;">
+            <a href="home_page.html" style = "background-color:transparent;"><img src="Logo/spack_logo.png"></a>
+        <table align="right">
             <colgroup>
                 <col style="width:20%">
                 <col style="width:0%">
@@ -89,7 +130,55 @@
                 </th>
             </tr>
         </table>
+        </div>
+        <div class="inline_things">
+            <img src="icons/with_bg/ai_icon1.PNG" alt="image" class="product_images_left">
+            <p class="paragrapg_descr_right" id="AI" onmouseover="showText(this)">
+                Our Spack device is equipped with 2 sensors: an accelerometer and a gyroscopic. 
+                Indeed, thanks to the linear acceleration and angular velocity sent by our sensors, 
+                this data will be pre-processed by a noise filter. The filtered frequencies 
+                will be sent to our model of neural networks which will do in-depth analysis and make 
+                relevant predictions. It will show the short-term and long-term consequences of 
+                sustaining a bad posture. Personalized reccomendations will be avaible to the user, 
+                and all of this will allow you to see real progress overtime!
+            </p>
+        </div>
+        <div class="inline_things">
+            <p class="paragrapg_descr_left" id="battery" onmouseover="showText(this)">
+                With its 72 hours battery life, you don't need to worry about missing a using 
+                it for a few days straight. You can go and work from anywhere for the weekend while 
+                having the confidence that your posture will not be affected. It has a USB-C port and 
+                also supports wireless charging. Thanks to the fast-charge feature, with 10 minutes of  
+                charging you can have 4 hours of usage. You will never have to think about Spack running
+                out of power!
+
+            </p>
+            <img src="icons/with_bg/battery1.PNG" alt="image" class="product_images_right">
+        </div>
+        <div class="inline_things">
+            <img src="icons/with_bg/graph1.PNG" alt="image" class="product_images_left">
+            <p class="paragrapg_descr_right" id="analysis" onmouseover="showText(this)">
+                Spack combined with the app will give access to powerful data analysis tools. 
+                You will have real-time sensory feedback, predictions for your back's health based 
+                on your daily habits, all time posture graphs and many more! You will also have 
+                access to improvment graphs. They will show you how much you have enhanced your 
+                posture over time and what would have happened if no actions were taken: back pain, 
+                bad curvature of the spine and long-term consequences such as scoliosis or lordosis.
+                Good news is you can avoid all these things to happen! 
+            </p>
+        </div>
+        <div class="inline_things">
+        <p class="paragrapg_descr_left" id="materials" onmouseover="showText(this)">
+                The chip is made out of the latest technology in composite materials.
+                It is as solid as steel, but light like a feather! 
+
+            </p>
+            <img src="icons/with_bg/shell3.PNG" alt="image" class="product_images_right">
+        </div>
+        <script>            
+            function showText(obj) {
+                obj.style.visibility = "visible";
+            }
+        </script>
     </body>
 </html>
-<script type='text/javascript'>
-</script>
