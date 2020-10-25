@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Comfortaa">
+
         <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Annie Use Your Telescope">
+
         <title>
-            Contact us
+            Spack | Pricing
         </title>
+
         <style>
+
             body {
                 background-color: #e6cea3;
             }
@@ -43,52 +48,139 @@
             a:hover {
                 background: #ecd7b4;
             }
+
+            .memberships{
+                text-align: center;
+                position: relative;
+                top: 50px;
+                margin-left: 20%;
+                height: 500px;
+            }
+
+            .RegMembership, .PreMembership {
+                font-family: "Comfortaa", serif;
+                background-color: #ffefd4;
+                position: relative;
+                bottom: 90px;
+                text-align: center;
+                font-size: 25px;
+                display: inline-block; 
+                margin: 6%;
+                height: 310px;
+                width: 500px;
+                border-radius: 20px;
+                }
+
+            .divider{
+                border-left: 1px solid black;
+                height: 400px;
+                display: inline-block; 
+            }
+
+            .Listofthings{
+                font-size: 20px;
+                text-align:left;
+                height: 80px;
+                width: 600px;
+                margin: 4%
+            }
+
+            h2 {
+                margin: 4%;
+            }
+
+            h1{
+                font-size: 25px;
+                margin: 0%;
+            }
+
         </style>
+
     </head>
     <body>
-        <a href="home_page.html" style = "background-color:#e6cea3;"><img src="Logo/spack_logo.png"></a>
-        <table align = right>
-            <colgroup>
-                <col style="width:20%">
-                <col style="width:0%">
-                <col style="width:20%">
-                <col style="width:0%">
-                <col style="width:20%">
-                <col style="width:0%">
-                <col style="width:20%">
-                <col style="width:0%">
-                <col style="width:20%">
-            </colgroup>
-            <tr>
-                <th>
-                    <a href = "product.html" id="ProductLink">Product</a>
-                </th>
-                <th>
-                    <p>|</p>
-                </th>
-                <th>
-                    <a href = "app.html" id="AppLink">App</a>
-                </th>
-                <th>
-                    <p>|</p>
-                </th>
-                <th>
-                    <a href = "pricing.html" id="pricingLink">Pricing</a>
-                </th>
-                <th>
-                    <p>|</p>
-                </th>
-                <th>
-                    <a href = "our_team.html" id='ourteamLink'>Our Team</a>
-                </th>
-                <th>
-                    <p>|</p>
-                </th>
-                <th>
-                    <a href = "contact_us.html" id='contactLink'>Contact Us</a>
-                </th>
-            </tr>
-        </table>
+        
+        <div class="a">
+            <a href="home_page.html" style = "background-color:#e6cea3;"><img src="Logo/spack_logo.png"></a>
+            <table align = right>
+
+                <colgroup>
+                    <col style="width:20%">
+                    <col style="width:0%">
+                    <col style="width:20%">
+                    <col style="width:0%">
+                    <col style="width:20%">
+                    <col style="width:0%">
+                    <col style="width:20%">
+                    <col style="width:0%">
+                    <col style="width:20%">
+                </colgroup>
+
+                <tr>
+                    <th>
+                        <a href = "product.html" id="ProductLink">Product</a>
+                    </th>
+                    <th>
+                        <p>|</p>
+                    </th>
+                    <th>
+                        <a href = "app.html" id="AppLink">App</a>
+                    </th>
+                    <th>
+                        <p>|</p>
+                    </th>
+                    <th>
+                        <a href = "pricing.html" id="pricingLink">Pricing</a>
+                    </th>
+                    <th>
+                        <p>|</p>
+                    </th>
+                    <th>
+                        <a href = "our_team.html" id='ourteamLink'>Our Team</a>
+                    </th>
+                    <th>
+                        <p>|</p>
+                    </th>
+                    <th>
+                        <a href = "contact_us.html" id='contactLink'>Contact Us</a>
+                    </th>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="memberships">
+
+            <div class="RegMembership">
+                <h2>Regular Membership!</h2>
+                <h1>- $10 monthly -</h1>
+                <ul class="Listofthings">
+                    <li>Assistance available weekdays 24/7</li>
+                    <br>
+                    <li>5% discount on Spack purchases</li>
+                    <br>
+                    <li>Starter member app features</li>
+                    <br>
+                    <li></li>
+                  </ul>
+            </div>
+
+            <div class="divider"></div>
+    
+            <div class="PreMembership">
+                <h2>Premium Membership!</h2>
+                <h1>- $20 monthly -</h1>
+                <ul class="Listofthings">
+                    <li>Assistance available everyday 24/7</li>
+                    <br>
+                    <li>20% discount on Spack purchases</li>
+                    <br>
+                    <li>Premium member app features</li>
+                    <br>
+                    <li></li>
+                  </ul>
+            </div>
+        </div>
+
     </body>
 </html>
 <script type='text/javascript'>
