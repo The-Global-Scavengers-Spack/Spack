@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Spack: Our Team Page</title>
+        <meta name = "description" content = "Find our more about our team members!">
         <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Comfortaa">
         <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Annie Use Your Telescope">
-        <title>
-            Contact us
-        </title>
+        
+        <link rel = "stylesheet"
+            href = "styles.css" />
         <style>
-            body {
+            .bodyV2{
                 background-color: #e6cea3;
+                font-family: "Comfortaa", serif;
+                color: #874000
+
             }
             table {
                 width: 80%;
@@ -29,7 +34,7 @@
                 width: 16%;
                 display: inline;
             }
-            a {
+            .header-class{
                 font-family: "Comfortaa", serif;
                 padding-top: 15px;
                 padding-bottom: 15px;
@@ -40,13 +45,162 @@
                 color: #874000;
                 border-radius: 7px;
             }
-            a:hover {
+            .header-class:hover {
                 background: #ecd7b4;
             }
+
+            .container{
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 0 1em;
+                font-size: 10mm;
+                border-radius: 30%;
+            }
+            .section-header{
+                font-family: "Impact";
+                font-weight: normal;
+                font-size: 24mm;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .footer-class{
+                font-size: 10mm;
+                margin: 0 auto;
+                font-family: "Impact";
+                font-weight: normal;
+                padding-top: 20px;
+                color: white;
+                
+            }
+            .main-footer{
+                padding: .25em 0;
+                background-color: #677db7;
+            }
+            
+            .main-footer-container{
+                display: flex;
+                align-items:center;
+            }
+            .main-footer-container ul{
+                flex-grow: 1;
+                text-align: end;
+
+            }
+            .button {
+                font-size: 20mm;
+                font-family: "Comfortaa";
+                font-weight: bold;
+                padding :50px;
+                color: white;
+                background-color: #677db7;
+                transition-duration: 0.4s;
+                border-radius: 5%;
+            }
+            .button:hover {
+                background-color: #94b1ff;
+            }
+            .subTitle{
+                color: #454B66;
+                font-weight: bold;
+            }
+            .textArea-class {
+                width: 100%;
+                padding: 10px;
+                text-align: left;
+                font-size: 8mm;
+                font-family:"Comfortaa";
+                box-sizing: border-box;
+                display: block;
+            }
+            hr.underlineFive{
+                border: 10px solid #677db7;
+                border-radius: 10px;
+            }
+            .imageOne{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                border-radius: 5%
+            }
+            .footer li{
+                padding: 0 .5em;
+                display: inline-block;
+
+            }
+
+            .footer img{
+                width: 210px;
+                height: 200px;
+                margin : 0;
+                transition-duration: 0.4s;
+
+            }
+            .footer img:hover{
+                background-color: #94b1ff;
+            }
+            .restOfImages{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .registerNowButtons-class{
+                text-align: center;
+                vertical-align:middle;
+                padding: 1em;
+                cursor: pointer;
+            }
+            .locations-row{
+                border-bottom: 10px solid #677db7;
+                padding-bottom: 1em;
+                margin-bottom: 1em;
+            }
+            .meeting-item{
+                padding-right: .5em;
+                display: inline-block;
+                font-size: 4mm;
+            }
+            .meeting-time{
+                font-weight: bold;
+                width: 14%;
+                font-size:4mm;
+                
+            }
+            .meeting-city{
+                width: 27%;
+                font-size:4mm;
+                font-weight: bold;
+            }
+            .meeting-place {
+                width: 18%;
+                font-size:4mm;
+                font-weight: bold;
+
+            }
+            .meeting-room{
+                width: 9%;
+                font-size: 4mm;
+                font-weight: bold;
+            }
+            .meeting-button{
+                font-size: 4mm;
+                font-weight: bold;
+                border-radius: 20%;
+                background-color: #677db7;
+                transition-duration: 0.4s;
+                color: white;
+            }
+            .meeting-button:hover{
+                background-color: #94b1ff;
+            }
+            
+
+
         </style>
     </head>
-    <body>
-        <a href="home_page.html" style = "background-color:#e6cea3;"><img src="Logo/spack_logo.png"></a>
+
+    <body class = "bodyV2">
+        <a href="home_page.html" style = "background-color:#e6cea3;" class = "header-class"><img src="Logo/spack_logo.png"></a>
         <table align = right>
             <colgroup>
                 <col style="width:20%">
@@ -60,42 +214,304 @@
                 <col style="width:20%">
             </colgroup>
 
-            
             <tr>
                 <th>
-                    <a href = "product.html" id="ProductLink">Product</a>
+                    <a href = "product.html" id="ProductLink" class = "header-class" >Product</a>
                 </th>
                 <th>
                     <p>|</p>
                 </th>
                 <th>
-                    <a href = "app.html" id="AppLink">App</a>
+                    <a href = "app.html" id="AppLink" class = "header-class">App</a>
                 </th>
                 <th>
                     <p>|</p>
                 </th>
                 <th>
-                    <a href = "pricing.html" id="pricingLink">Pricing</a>
+                    <a href = "pricing.html" id="pricingLink" class = "header-class" >Pricing</a>
                 </th>
                 <th>
                     <p>|</p>
                 </th>
                 <th>
-                    <a href = "our_team.html" id='ourteamLink'>Our Team</a>
+                    <a href = "our_team.html" id='ourteamLink' class = "header-class" >Our Team</a>
                 </th>
                 <th>
                     <p>|</p>
                 </th>
-                <th>
-                    <a href = "contact_us.html" id='contactLink'>Contact Us</a>
+                <th class = "header-class">
+                    <a href = "contact_us.html" id='contactLink' class = "header-class">Contact Us</a>
                 </th>
             </tr>
+          
         </table>
+       
+
+        <section class = "content-section container">
+            <br>
+            <br>
+            <br>
+            <h1 class = "section-header">OUR TEAM</h1>
+            <br>
+            <p1>
+                Our team is very small and is made up of a total of 6 individuals wanting to make a
+                difference in this world, using Spack! Our Team is made up of Sonia, Dhinaa, Jeyason, Jerry, Justin and James. Our company
+                was first formed due to this entire world going online due to Covid-19! We saw that many people did not know how to sit properly in front
+                of their computer screens. We are hoping that our product will help you find a good back posture while working from home, so that 
+                We hope that your back will be at peak condition after using our spectacular product!!!!!
+            </p1>
+            <br>
+            <br>
+            <br>
+            <img src = "Images_our_team/People_smiling.jpg" width = "400" height = "400" class = "imageOne">
+
+            <h2 class = "subTitle">
+                Software Engineer - Jeyason Jeyaparan
+            </h2>
+            <img src = "Images_our_team/Person Image.png" alt = "This is Jeyason's image" class = "restOfImages">
+
+            <br>
+            <p2>
+                Hey guys! I am Jeyason! Working here at Spack has been such a thrill in my life. I am glad that my team of friends were finally
+                able to come up with a product that could geninuely change the lives of so many people, young or old. I am 
+                working on lots of different AI technology to make upgrades to our product. If you want to look at exactly what I am
+                reading, to assist me in improving the AI technology of our product please click this button.
+            </p2>
+
+            <br>
+            <br>
+            <br>
+
+            <a href = "https://www.pwc.com/gx/en/industries/healthcare/publications/ai-robotics-new-health/transforming-healthcare.html" target = "_blank"> 
+                <button type = "button" class = "button button:hover ">
+                    Click here to find out more about the AI technology that I am working on!
+                </button>
+            </a> 
+
+            <h2 class = "subTitle">
+                Researcher - Sonia
+            </h2>
+
+            <img src = "Images_our_team/Person Image.png" alt = "This is Sonia's image" class = "restOfImages">
+            <br>
+            <p3>
+                Hey guys! I am Sonia, and I do mostly the research aspect of this product. What that means is I do extensive research about the
+                spine of the human body and bring that information back to the team. After I do this, we are able to improve the different aspects of the product
+                to a greater extent. If you would like to know more information about what I am researching about, please click on the button below. This link will lead
+                to a page giving useful information about the back and good back posture.
+            </p3>
+
+            <br>
+            <br>
+            <br>
+
+            <a href = "https://www.health.harvard.edu/staying-healthy/why-good-posture-matters" target = "_blank"> 
+                <button type = "button" class = "button button:hover ">
+                    Click here to find out more about the spine and about good back posture!
+                </button>
+            </a> 
+
+            <h2 class = "subTitle" >
+                Marketing Expert - Jerry Nguyen
+            </h2>
+
+            <img src = "Images_our_team/Person Image.png" alt = "This is Jerry's image" class = "restOfImages">
+            <br>
+            <br>
+            <p4>
+                Hey guys! I am Jerry, and I was so excited to help bring light to this amazing product
+                that was hidden in the darkness! If you are seeing this and want to learn more about our
+                product, please just shoot me an email! Also, I will be visiting various different cities
+                across Ontario to discuss more about the features and other details of my team's product, so
+                try to attend one of them if you can. The best part is, attending these meetings are completely for
+                free! All you have to do is register for whichever meeting you want to attend, and I will reach back
+                to you to let you know more details about the meeting day.
+            </p4>
+
+            <h2 class = "subTitle">
+                MEETING DATES AND LOCATIONS
+            </h2>
+
+            <div>
+                <div class = "locations-row">
+                    <!-- strong is for bolding-->
+                    <span class = "meeting-item meeting-time">11:00 AM to 1: 00 PM, NOV 1ST 2020</span>
+                    <span class = "meeting-item meeting-city">RICHMOND HILL, ONTARIO</span>
+                    <span class = "meeting-item meeting-place">OAK RIDGES COMMUNITY CENTER</span>
+                    <span class = "meeting-item meeting-room">ROOM 1A</span>
+                    <span><button role = "button" class = "registerNowButtons-class meeting-button" onclick = "displayRegisterInfo()">REGISTER NOW!</button></span>
+                    <label class = "meeting-item meeting-time" style = "display: none" id="firstNameLabel" for="fname">First Name:</label>
+                    <input style="display: none" id="firstName" name="fname">
+                    <label class = "meeting-item meeting-time" style = "display: none" id = "lastNameLabel" for = "lname">Last Name:</label>
+                    <input style = "display: none" id = "lastName" name = "lname">
+                    <label class = "meeting-item meeting-time" style = "display:none" id = "emailNameLabel" for = "eName">Email:</label>
+                    <input style = "display:none" id = "emailName" name = "eName">
+
+                </div>
+                <div class = "locations-row">
+                    <!-- strong is for bolding-->
+                    <span class = "meeting-item meeting-time" >NOV 7th 2020,12:30 pm to 2:30 pm</span>
+                    <span class = "meeting-item meeting-city">OTTAWA, ONTARIO</span>
+                    <span class = "meeting-item meeting-place" >UNIVERSITY OF OTTAWA</span>
+                    <span class = "meeting-item meeting-room">ROOM 2040</span>
+                    <span><button role = "button" class = "registerNowButtons-class meeting-button">REGISTER NOW!</button></span>
+
+                    <!-- hr is for underlines-->
+                </div>
+                <div class = "locations-row">
+                    <!-- strong is for bolding-->
+                    <span class = "meeting-item meeting-time" >NOV 14th 2020,2:30 pm to 4:30 pm</span>
+                    <span class = "meeting-item meeting-city">BRAMPTON, ONTARIO</span>
+                    <span class = "meeting-item meeting-place">CASSIE CAMPBELL COMMUNITY CENTRE</span>
+                    <span class = "meeting-item meeting-room">ROOM 2023</span>
+                    <span><button role = "button" class = "registerNowButtons-class meeting-button">REGISTER NOW!</button></span>
+
+                </div>
+                <div class = "locations-row">
+                    <!-- strong is for bolding-->
+                    <span class = "meeting-item meeting-time">NOV 21th 2020,12:30 pm to 2:30 pm</span>
+                    <span class = "meeting-item meeting-city">SCARBOURGH, ONTARIO</span>
+                    <span class = "meeting-item meeting-place">ELLESMERE COMMUNITY CENTRE</span>
+                    <span class = "meeting-item meeting-room">ROOM 2014</span>
+                    <span><button role = "button" class = "registerNowButtons-class meeting-button" >REGISTER NOW!</button></span>
+                </div>
+
+                <h3 class = "subTitle">
+                    Have you already attended a meeting? Please let us know how it went for you! We appreciate the feedback!
+                </h3>
+                <br>
+                <textarea id = "feedback" class = "textArea-class" cols="40" rows="5">I think the meeting went...</textarea>
+                <button role = "button" onclick = "printThankYouMessage()" class = "meeting-button" id = "submit-button">SUBMIT</button>
+
+                <p id = "thankYou"></p>
+
+                <script>
+                    function printThankYouMessage(){
+                        document.getElementById("thankYou").innerHTML = "Thank you for your feedback! We will definitely take a look at it to improve our company more!"
+                        var removedItem = document.getElementById("feedback");
+                        var secondRemovedItem = document.getElementById("submit-button");
+                        removedItem.parentNode.removeChild(removedItem);
+                        secondRemovedItem.parentNode.removeChild(secondRemovedItem);
+                    }
+                    function displayRegisterInfo(){
+                        firstNameLabel = document.getElementById("firstNameLabel");
+                        firstNameLabel.style = "display: block";
+                        firstName = document.getElementById("firstName");
+                        firstName.style = "display: block";
+                        lastNameLabel = document.getElementById("lastNameLabel");
+                        lastNameLabel.style = "display: block";
+                        lastName = document.getElementById("lastName");
+                        lastName.style = "display: block";
+                        emailNameLabel = document.getElementById("emailNameLabel");
+                        emailNameLabel.style = "display: block";
+                        emailName = document.getElementById("emailName");
+                        emailName.style = "display: block";
+                    }
+
+                </script>
+            </div>
+            <div class = "locations-row"></div>
+
+            <h2 class = "subTitle">
+                Software Engineer - Justin
+            </h2>
+
+            <img src = "Images_our_team/Person Image.png" alt = "This is Justin's image" class = "restOfImages">
+            <br>
+            <br>
+            <p5>
+                Hey guys! I am Justin! I love working in Spack because I felt that I could actually make a difference to people's lives. I work as a software 
+                engineer along with Jeyason for this product which involves reporting what the sensor detects to the Slack website, where you as the user, could see what your posture looks like.
+                If you pay for the premium product, you get to know how your posture is over a length of time, and see how it affects your health. I am also working on the moblie app
+                so that users could access our product on the go if they need to!
+            </p5>
+
+            <h2 class = "subTitle">
+                Accountant - James
+            </h2>
+
+            <img src = "Images_our_team/Person Image.png" alt = "This is James' image" class = "restOfImages">
+            <br>
+            <br>
+
+            <p6>
+                Hey guys! I am James and I work as the accountant for this company. I love working for this company because they welcomed me with lots of love and I geninuely feel that
+                the product that my team is working on could actually make a difference in this world. I am glad to know that some people have already started purchasing our product, as 
+                it really helps make our company grow, and gives us the budget to make different upgrades to our product.
+            </p6>
+
+            <h2 class = "subTitle">
+                Computer Engineer - Dhiaa
+            </h2>
+
+            <img src = "Images_our_team/Person Image.png" alt = "This is Dhiaa's image" class = "restOfImages">
+            <br>
+            <br>
+            <p7>
+                Hey guys! I am Dhiaa and I am the computer engineer of this company. I helped my team by designing the chip and the material around the chip.
+                I love working at this company because it allows me to use my knowledge of engineering to help people have a good back posture, espicially during these
+                Covid-19 times! I also appreciate how cheap our product is for its value, so anyone could purchase it and improve their back posture. If you would like to know more information
+                about the chips that our team used for building this product please click on the button below.
+            </p7>
+            <br>
+            <br>
+            <br>
+
+            <a href = "https://www.globalspec.com/learnmore/semiconductors/microprocessors_microcontrollers/microprocessors#:~:text=Microprocessor%20chips%20(MPU)%20are%20silicon,one%20memory%20location%20to%20another." target = "_blank"> 
+                <button type = "button" class = "button button:hover ">
+                    Click here to find out more about the chips used in this product!
+                </button>
+            </a>
+            <br>
+           
+
+        </section>
+        <br>
+        <br>
+        <hr class = "underlineFive">
+        <!--- Footer -->
+        <footer class = "main-footer">
+            
+
+            <div class = "container main-footer-container"></div>
+            <img src="Logo/spack_logo.png" width = 200 height = 200>
+            <h1 class = "footer-class"> BACK IT UP!</h1>
+
+            <!--u1 stands for unordered list-->
+            <ul class = "footer">
+                <!-- li stands for list item-->
+                <li> 
+                    <a href = "https://www.youtube.com/" target = "_blank">
+                        <img src = "Images_our_team/youtube.png">
+                   </a>
+                </li>
+                <li>
+                    <a href = "https://www.facebook.com/" target = "_blank">
+                        <img src = "Images_our_team/facebook_logo.png" >
+                    </a>
+                
+                </li>
+                <li> 
+                    <a href = "https://www.instagram.com/" target = "_blank">
+                        <img src = "Images_our_team/Instagram.png" >
+                    </a>
+                </li>
+                <li>
+                    <a href = "https://twitter.com/" target = "_blank">
+                        <img src = "Images_our_team/Twitter.png" >
+                    </a>
+                </li>
+                <li>
+                    <a href = "https://www.whatsapp.com/?lang=en" target = "_blank">
+                        <img src = "Images_our_team/whatsapp.png">
+                    </a>
+                </li>
+
+            </ul>
+
+        </footer>
+
     </body>
 </html>
 <script type='text/javascript'>
 </script>
-<section>
-    <h1>Jeyason Jeyaparan</h1>
-    
-</section>
