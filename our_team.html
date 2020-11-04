@@ -13,16 +13,30 @@
             href = "styles.css" />
         <style>
             .bodyV2{
-                background-color: #e6cea3;
+                background-color: white;
                 font-family: "Comfortaa", serif;
                 color: #874000
 
             }
+            a {
+                font-family: "Comfortaa", serif;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-decoration: none;
+                background-color: white;
+                color: rgb(114, 110, 110);
+                border-radius: 7px;
+            }
+            a:hover {
+                background: rgb(235, 230, 230);
+            }
             table {
                 width: 80%;
                 margin-top: 20px;
-                font-size: 25px;
-                background-color: #ffefd4;
+                font-size: 1.5em;
+                background-color: white;
                 color: #874000;
                 border-radius: 6px;
                 display: inline;
@@ -201,51 +215,51 @@
     </head>
 
     <body class = "bodyV2">
-        <a href="home_page.html" style = "background-color:#e6cea3;" class = "header-class"><img src="Logo/spack_logo.png"></a>
-        <table align = right>
-            <colgroup>
-                <col style="width:20%">
-                <col style="width:0%">
-                <col style="width:20%">
-                <col style="width:0%">
-                <col style="width:20%">
-                <col style="width:0%">
-                <col style="width:20%">
-                <col style="width:0%">
-                <col style="width:20%">
-            </colgroup>
-
-            <tr>
-                <th>
-                    <a href = "product.html" id="ProductLink" class = "header-class" >Product</a>
-                </th>
-                <th>
-                    <p>|</p>
-                </th>
-                <th>
-                    <a href = "app.html" id="AppLink" class = "header-class">App</a>
-                </th>
-                <th>
-                    <p>|</p>
-                </th>
-                <th>
-                    <a href = "pricing.html" id="pricingLink" class = "header-class" >Pricing</a>
-                </th>
-                <th>
-                    <p>|</p>
-                </th>
-                <th>
-                    <a href = "our_team.html" id='ourteamLink' class = "header-class" >Our Team</a>
-                </th>
-                <th>
-                    <p>|</p>
-                </th>
-                <th class = "header-class">
-                    <a href = "contact_us.html" id='contactLink' class = "header-class">Contact Us</a>
-                </th>
-            </tr>
-          
-        </table>
+        <div>
+            <a href="home_page.html" class = "LogoHome"><img src="Logo/spack_logo.png"></a>
+            <table align = right>
+                <colgroup>
+                    <col style="width:20%">
+                    <col style="width:0%">
+                    <col style="width:20%">
+                    <col style="width:0%">
+                    <col style="width:20%">
+                    <col style="width:0%">
+                    <col style="width:20%">
+                    <col style="width:0%">
+                    <col style="width:20%">
+                </colgroup>
+                <tr>
+                    <th>
+                        <a href = "product.html" id="ProductLink">Product</a>
+                    </th>
+                    <th>
+                        <p style="color: rgb(114, 110, 110)">|</p>
+                    </th>
+                    <th>
+                        <a href = "app.html" id="AppLink">App</a>
+                    </th>
+                    <th>
+                        <p style="color: rgb(114, 110, 110)">|</p>
+                    </th>
+                    <th>
+                        <a href = "pricing.html" id="pricingLink">Pricing</a>
+                    </th>
+                    <th>
+                        <p style="color: rgb(114, 110, 110)">|</p>
+                    </th>
+                    <th>
+                        <a href = "our_team.html" id='ourteamLink'>Our Team</a>
+                    </th>
+                    <th>
+                        <p style="color: rgb(114, 110, 110)">|</p>
+                    </th>
+                    <th>
+                        <a href = "contact_us.html" id='contactLink'>Contact Us</a>
+                    </th>
+                </tr>
+            </table>
+        </div>
        
 
         <section class = "content-section container">
