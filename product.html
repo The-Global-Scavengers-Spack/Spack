@@ -17,8 +17,8 @@
             table {
                 width: 80%;
                 margin-top: 20px;
-                font-size: 1.5em;
-                background-color: white;
+                font-size: 1.35em;
+                background-color: transparent;
                 color: #874000;
                 border-radius: 6px;
                 display: inline;
@@ -27,7 +27,7 @@
                 line-height: 25px;
             }
             img {
-                margin-top: 20px;
+                margin-top: 25px;
                 width: 16%;
                 display: inline;
             }
@@ -38,7 +38,7 @@
                 padding-left: 20px;
                 padding-right: 20px;
                 text-decoration: none;
-                background-color: white;
+                background: transparent;
                 color: rgb(114, 110, 110);
                 border-radius: 7px;
             }
@@ -46,11 +46,22 @@
                 background: rgb(235, 230, 230);
             }
             div {
+                align-self: center;
+                column-fill: auto;
                 margin-bottom: 30px;
+                padding-bottom: 1%;
+                padding-right: 1%;
+                background-color: white;
+                text-align: center;
+            }
+            p {
+                font-family: "Comfortaa", serif;
+                line-height: 1.6;
             }
             .inline_things {
                 display: flex;
-                align-items: center
+                align-items: center;
+                align-self: center;
             }
             .product_images_right {
                 margin-right: 5%;
@@ -69,12 +80,14 @@
             .paragrapg_descr_left {
                 margin-left: 23%;
                 font-family: "Comfortaa", serif;
-
+                opacity: 0;
+                transition-delay: 100ms;
             }
             .paragrapg_descr_right {
                 margin-right: 5%;
                 font-family: "Comfortaa", serif;
-
+                opacity: 0;
+                transition-delay: 100ms;
             }
             .titles {
                 font-family: "Comfortaa", serif;
@@ -86,8 +99,8 @@
         </style>
     </head>
     <body>
-        <div>
-            <a href="home_page.html" class = "LogoHome"><img src="Logo/spack_logo.png"></a>
+        <div style="margin-left: 1.3%; width: 96.3%;padding-right: 1%;">
+            <a href="home_page.html"><img src="Logo/spack_logo.png"></a>
             <table align = right>
                 <colgroup>
                     <col style="width:20%">
@@ -134,13 +147,12 @@
         <div class="inline_things">
             <img src="icons/with_bg/ai_icon1.PNG" alt="image" class="product_images_left">
             <p class="paragrapg_descr_right" id="AI" onmouseover="showText(this)">
-                Our Spack device is equipped with 2 sensors: an accelerometer and a gyroscopic. 
-                Indeed, thanks to the linear acceleration and angular velocity sent by our sensors, 
-                this data will be pre-processed by a noise filter. The filtered frequencies 
-                will be sent to our model of neural networks which will do in-depth analysis and make 
-                relevant predictions. It will show the short-term and long-term consequences of 
-                sustaining a bad posture. Personalized reccomendations will be avaible to the user, 
-                and all of this will allow you to see real progress overtime!
+                Our Spack device is equipped with 2 sensors: an accelerometer and a gyroscope. 
+                Our sensors will send the data to the app, such as linear acceleration and velocity, 
+                and noise frequencies will be removed to give your accurate results. All this information is fed to 
+                neural networks to give you in-depth analysis and relevant predictions, such as what specifically 
+                about your posture is wrong and the possible consequences of keeping a bad one. Personalized 
+                reccomendations will be avaible to the user, and all of this will allow you to see real progress overtime!
             </p>
         </div>
         <div class="inline_things">
@@ -157,18 +169,18 @@
         </div>
         <div class="inline_things">
             <img src="icons/with_bg/graph1.PNG" alt="image" class="product_images_left">
-            <p class="paragrapg_descr_right" id="analysis" onmouseover="showText(this)">
+            <p class="paragrapg_descr_right" id="analysis" onmouseover="showText(this)" onmouseover="changeText()">
                 Spack combined with the app will give access to powerful data analysis tools. 
                 You will have real-time sensory feedback, predictions for your back's health based 
                 on your daily habits, all time posture graphs and many more! You will also have 
                 access to improvment graphs. They will show you how much you have enhanced your 
-                posture over time and what would have happened if no actions were taken: back pain, 
+                posture over time and what would have happened if no actions were taken: back pain,
                 bad curvature of the spine and long-term consequences such as scoliosis or lordosis.
-                Good news is you can avoid all these things to happen! 
+                Good news is you can avoid all these things to happen!
             </p>
         </div>
         <div class="inline_things">
-        <p class="paragrapg_descr_left" id="materials" onmouseover="showText(this)">
+            <p class="paragrapg_descr_left" id="materials" onmouseover="showText(this)">
                 The chip is made out of the latest technology in composite materials.
                 It is as solid as steel, but light like a feather! 
 
@@ -177,7 +189,7 @@
         </div>
         <script>            
             function showText(obj) {
-                obj.style.visibility = "visible";
+                obj.style.opacity = 1;
             }
         </script>
     </body>
