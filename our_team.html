@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" href="Logo/icon.png" sizes="35x35" type="image/png">
         <title>Spack: Our Team Page</title>
         <meta name = "description" content = "Find our more about our team members!">
         <link rel="stylesheet"
@@ -13,30 +12,16 @@
             href = "styles.css" />
         <style>
             .bodyV2{
-                background-color: white;
+                background-color: #e6cea3;
                 font-family: "Comfortaa", serif;
                 color: #874000
 
             }
-            a {
-                font-family: "Comfortaa", serif;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                padding-left: 20px;
-                padding-right: 20px;
-                text-decoration: none;
-                background-color: white;
-                color: rgb(114, 110, 110);
-                border-radius: 7px;
-            }
-            a:hover {
-                background: rgb(235, 230, 230);
-            }
             table {
                 width: 80%;
                 margin-top: 20px;
-                font-size: 1.5em;
-                background-color: white;
+                font-size: 25px;
+                background-color: #ffefd4;
                 color: #874000;
                 border-radius: 6px;
                 display: inline;
@@ -215,51 +200,51 @@
     </head>
 
     <body class = "bodyV2">
-        <div>
-            <a href="home_page.html" class = "LogoHome"><img src="Logo/spack_logo.png"></a>
-            <table align = right>
-                <colgroup>
-                    <col style="width:20%">
-                    <col style="width:0%">
-                    <col style="width:20%">
-                    <col style="width:0%">
-                    <col style="width:20%">
-                    <col style="width:0%">
-                    <col style="width:20%">
-                    <col style="width:0%">
-                    <col style="width:20%">
-                </colgroup>
-                <tr>
-                    <th>
-                        <a href = "product.html" id="ProductLink">Product</a>
-                    </th>
-                    <th>
-                        <p style="color: rgb(114, 110, 110)">|</p>
-                    </th>
-                    <th>
-                        <a href = "app.html" id="AppLink">App</a>
-                    </th>
-                    <th>
-                        <p style="color: rgb(114, 110, 110)">|</p>
-                    </th>
-                    <th>
-                        <a href = "pricing.html" id="pricingLink">Pricing</a>
-                    </th>
-                    <th>
-                        <p style="color: rgb(114, 110, 110)">|</p>
-                    </th>
-                    <th>
-                        <a href = "our_team.html" id='ourteamLink'>Our Team</a>
-                    </th>
-                    <th>
-                        <p style="color: rgb(114, 110, 110)">|</p>
-                    </th>
-                    <th>
-                        <a href = "contact_us.html" id='contactLink'>Contact Us</a>
-                    </th>
-                </tr>
-            </table>
-        </div>
+        <a href="home_page.html" style = "background-color:#e6cea3;" class = "header-class"><img src="Logo/spack_logo.png"></a>
+        <table align = right>
+            <colgroup>
+                <col style="width:20%">
+                <col style="width:0%">
+                <col style="width:20%">
+                <col style="width:0%">
+                <col style="width:20%">
+                <col style="width:0%">
+                <col style="width:20%">
+                <col style="width:0%">
+                <col style="width:20%">
+            </colgroup>
+
+            <tr>
+                <th>
+                    <a href = "product.html" id="ProductLink" class = "header-class" >Product</a>
+                </th>
+                <th>
+                    <p>|</p>
+                </th>
+                <th>
+                    <a href = "app.html" id="AppLink" class = "header-class">App</a>
+                </th>
+                <th>
+                    <p>|</p>
+                </th>
+                <th>
+                    <a href = "pricing.html" id="pricingLink" class = "header-class" >Pricing</a>
+                </th>
+                <th>
+                    <p>|</p>
+                </th>
+                <th>
+                    <a href = "our_team.html" id='ourteamLink' class = "header-class" >Our Team</a>
+                </th>
+                <th>
+                    <p>|</p>
+                </th>
+                <th class = "header-class">
+                    <a href = "contact_us.html" id='contactLink' class = "header-class">Contact Us</a>
+                </th>
+            </tr>
+          
+        </table>
        
 
         <section class = "content-section container">
@@ -354,13 +339,15 @@
                     <span class = "meeting-item meeting-city">RICHMOND HILL, ONTARIO</span>
                     <span class = "meeting-item meeting-place">OAK RIDGES COMMUNITY CENTER</span>
                     <span class = "meeting-item meeting-room">ROOM 1A</span>
-                    <span><button role = "button" class = "registerNowButtons-class meeting-button" onclick = "displayRegisterInfo()">REGISTER NOW!</button></span>
+                    <span><button role = "button" class = "registerNowButtons-class meeting-button" onclick = "displayRegisterInfo(1)">REGISTER NOW!</button></span>
                     <label class = "meeting-item meeting-time" style = "display: none" id="firstNameLabel" for="fname">First Name:</label>
                     <input style="display: none" id="firstName" name="fname">
                     <label class = "meeting-item meeting-time" style = "display: none" id = "lastNameLabel" for = "lname">Last Name:</label>
                     <input style = "display: none" id = "lastName" name = "lname">
                     <label class = "meeting-item meeting-time" style = "display:none" id = "emailNameLabel" for = "eName">Email:</label>
                     <input style = "display:none" id = "emailName" name = "eName">
+                    <span><button role = "button" id = "submitButtonOne" style = "display:none" onclick = "displaySubmittedInfo(1)" class = "registerNowButtons-class meeting-button" onclick = "displaySubmittedInfo(1)">SUBMIT</button></span>
+                    <p id = "submittedOne"></p>
 
                 </div>
                 <div class = "locations-row">
@@ -369,8 +356,16 @@
                     <span class = "meeting-item meeting-city">OTTAWA, ONTARIO</span>
                     <span class = "meeting-item meeting-place" >UNIVERSITY OF OTTAWA</span>
                     <span class = "meeting-item meeting-room">ROOM 2040</span>
-                    <span><button role = "button" class = "registerNowButtons-class meeting-button">REGISTER NOW!</button></span>
-
+                    <span><button role = "button" class = "registerNowButtons-class meeting-button" onclick = "displayRegisterInfo(2)">REGISTER NOW!</button></span>
+                    <label class = "meeting-item meeting-time" style = "display: none" id="firstNameLabel2" for="fname">First Name:</label>
+                    <input style="display: none" id="firstName2" name="fname">
+                    <label class = "meeting-item meeting-time" style = "display: none" id = "lastNameLabel2" for = "lname">Last Name:</label>
+                    <input style = "display: none" id = "lastName2" name = "lname">
+                    <label class = "meeting-item meeting-time" style = "display:none" id = "emailNameLabel2" for = "eName">Email:</label>
+                    <input style = "display:none" id = "emailName2" name = "eName">
+                    <span><button role = "button" id = "submitButtonTwo" style = "display:none" class = "registerNowButtons-class meeting-button" onclick = "displaySubmittedInfo(2)">SUBMIT</button></span>
+                    <p id = "submittedTwo"></p>
+                    
                     <!-- hr is for underlines-->
                 </div>
                 <div class = "locations-row">
@@ -379,7 +374,15 @@
                     <span class = "meeting-item meeting-city">BRAMPTON, ONTARIO</span>
                     <span class = "meeting-item meeting-place">CASSIE CAMPBELL COMMUNITY CENTRE</span>
                     <span class = "meeting-item meeting-room">ROOM 2023</span>
-                    <span><button role = "button" class = "registerNowButtons-class meeting-button">REGISTER NOW!</button></span>
+                    <span><button role = "button" class = "registerNowButtons-class meeting-button" onclick = "displayRegisterInfo(3)">REGISTER NOW!</button></span>
+                    <label class = "meeting-item meeting-time" style = "display: none" id="firstNameLabel3" for="fname">First Name:</label>
+                    <input style="display: none" id="firstName3" name="fname">
+                    <label class = "meeting-item meeting-time" style = "display: none" id = "lastNameLabel3" for = "lname">Last Name:</label>
+                    <input style = "display: none" id = "lastName3" name = "lname">
+                    <label class = "meeting-item meeting-time" style = "display:none" id = "emailNameLabel3" for = "eName">Email:</label>
+                    <input style = "display:none" id = "emailName3" name = "eName">
+                    <span><button role = "button" id = "submitButtonThree"  style = "display:none" class = "registerNowButtons-class meeting-button" onclick = "displaySubmittedInfo(3)">SUBMIT</button></span>
+                    <p id = "submittedThree"></p>
 
                 </div>
                 <div class = "locations-row">
@@ -388,7 +391,15 @@
                     <span class = "meeting-item meeting-city">SCARBOURGH, ONTARIO</span>
                     <span class = "meeting-item meeting-place">ELLESMERE COMMUNITY CENTRE</span>
                     <span class = "meeting-item meeting-room">ROOM 2014</span>
-                    <span><button role = "button" class = "registerNowButtons-class meeting-button" >REGISTER NOW!</button></span>
+                    <span><button role = "button" class = "registerNowButtons-class meeting-button" onclick = "displayRegisterInfo(4)">REGISTER NOW!</button></span>
+                    <label class = "meeting-item meeting-time" style = "display: none" id="firstNameLabel4" for="fname">First Name:</label>
+                    <input style="display: none" id="firstName4" name="fname">
+                    <label class = "meeting-item meeting-time" style = "display: none" id = "lastNameLabel4" for = "lname">Last Name:</label>
+                    <input style = "display: none" id = "lastName4" name = "lname">
+                    <label class = "meeting-item meeting-time" style = "display:none" id = "emailNameLabel4" for = "eName">Email:</label>
+                    <input style = "display:none" id = "emailName4" name = "eName">
+                    <span><button role = "button" id = "submitButtonFour"  style = "display:none" class = "registerNowButtons-class meeting-button" onclick = "displaySubmittedInfo(4)">SUBMIT</button></span>
+                    <p id = "submittedFour"></p>
                 </div>
 
                 <h3 class = "subTitle">
@@ -408,19 +419,133 @@
                         removedItem.parentNode.removeChild(removedItem);
                         secondRemovedItem.parentNode.removeChild(secondRemovedItem);
                     }
-                    function displayRegisterInfo(){
-                        firstNameLabel = document.getElementById("firstNameLabel");
-                        firstNameLabel.style = "display: block";
-                        firstName = document.getElementById("firstName");
-                        firstName.style = "display: block";
-                        lastNameLabel = document.getElementById("lastNameLabel");
-                        lastNameLabel.style = "display: block";
-                        lastName = document.getElementById("lastName");
-                        lastName.style = "display: block";
-                        emailNameLabel = document.getElementById("emailNameLabel");
-                        emailNameLabel.style = "display: block";
-                        emailName = document.getElementById("emailName");
-                        emailName.style = "display: block";
+                    function displayRegisterInfo(number){
+                        if(number == 1){
+                            firstNameLabel = document.getElementById("firstNameLabel");
+                            firstNameLabel.style = "display: block";
+                            firstName = document.getElementById("firstName");
+                            firstName.style = "display: block";
+                            lastNameLabel = document.getElementById("lastNameLabel");
+                            lastNameLabel.style = "display: block";
+                            lastName = document.getElementById("lastName");
+                            lastName.style = "display: block";
+                            emailNameLabel = document.getElementById("emailNameLabel");
+                            emailNameLabel.style = "display: block";
+                            emailName = document.getElementById("emailName");
+                            emailName.style = "display: block";
+                            submitButton = document.getElementById("submitButtonOne");
+                            submitButton.style = "display: block";
+
+                        }
+                        else if(number == 2){
+                            firstNameLabel = document.getElementById("firstNameLabel2");
+                            firstNameLabel.style = "display: block";
+                            firstName = document.getElementById("firstName2");
+                            firstName.style = "display: block";
+                            lastNameLabel = document.getElementById("lastNameLabel2");
+                            lastNameLabel.style = "display: block";
+                            lastName = document.getElementById("lastName2");
+                            lastName.style = "display: block";
+                            emailNameLabel = document.getElementById("emailNameLabel2");
+                            emailNameLabel.style = "display: block";
+                            emailName = document.getElementById("emailName2");
+                            emailName.style = "display: block";
+                            submitButton = document.getElementById("submitButtonTwo");
+                            submitButton.style = "display: block";
+                        }
+                        else if(number == 3){
+                            firstNameLabel = document.getElementById("firstNameLabel3");
+                            firstNameLabel.style = "display: block";
+                            firstName = document.getElementById("firstName3");
+                            firstName.style = "display: block";
+                            lastNameLabel = document.getElementById("lastNameLabel3");
+                            lastNameLabel.style = "display: block";
+                            lastName = document.getElementById("lastName3");
+                            lastName.style = "display: block";
+                            emailNameLabel = document.getElementById("emailNameLabel3");
+                            emailNameLabel.style = "display: block";
+                            emailName = document.getElementById("emailName3");
+                            emailName.style = "display: block";
+                            submitButton = document.getElementById("submitButtonThree");
+                            submitButton.style = "display: block";
+                        }
+                        else if(number == 4){
+                            firstNameLabel = document.getElementById("firstNameLabel4");
+                            firstNameLabel.style = "display: block";
+                            firstName = document.getElementById("firstName4");
+                            firstName.style = "display: block";
+                            lastNameLabel = document.getElementById("lastNameLabel4");
+                            lastNameLabel.style = "display: block";
+                            lastName = document.getElementById("lastName4");
+                            lastName.style = "display: block";
+                            emailNameLabel = document.getElementById("emailNameLabel4");
+                            emailNameLabel.style = "display: block";
+                            emailName = document.getElementById("emailName4");
+                            emailName.style = "display: block";
+                            submitButton = document.getElementById("submitButtonFour");
+                            submitButton.style = "display: block";
+                        }
+
+                    }
+                    function displaySubmittedInfo(number){
+                        var firstNameLabelItem;
+                        var firstNameItem;
+                        var lastNameLabelItem;
+                        var lastNameItem;
+                        var emailNameItem;
+                        var emailNameLabelItem;
+                        var submitButton;
+                        if(number == 1){
+                            document.getElementById("submittedOne").innerHTML = "Thank you for booking this meeting!"
+                            firstNameLabelItem = document.getElementById("firstNameLabel");
+                            firstNameItem = document.getElementById("firstName");
+                            lastNameLabelItem = document.getElementById("lastNameLabel");
+                            lastNameItem = document.getElementById("lastName");
+                            emailNameItem = document.getElementById("emailName");
+                            emailNameLabelItem = document.getElementById("emailNameLabel");
+                            submitButton = document.getElementById("submitButtonOne");
+
+                        }
+                        else if(number ==2){
+                            document.getElementById("submittedTwo").innerHTML = "Thank you for booking this meeting!"
+                            firstNameLabelItem = document.getElementById("firstNameLabel2");
+                            firstNameItem = document.getElementById("firstName2");
+                            lastNameLabelItem = document.getElementById("lastNameLabel2");
+                            lastNameItem = document.getElementById("lastName2");
+                            emailNameItem = document.getElementById("emailName2");
+                            emailNameLabelItem = document.getElementById("emailNameLabel2");
+                            submitButton = document.getElementById("submitButtonTwo");
+
+                        }
+                        else if(number == 3){
+                            document.getElementById("submittedThree").innerHTML = "Thank you for booking this meeting!"
+                            firstNameLabelItem = document.getElementById("firstNameLabel3");
+                            firstNameItem = document.getElementById("firstName3");
+                            lastNameLabelItem = document.getElementById("lastNameLabel3");
+                            lastNameItem = document.getElementById("lastName3");
+                            emailNameItem = document.getElementById("emailName3");
+                            emailNameLabelItem = document.getElementById("emailNameLabel3");
+                            submitButton = document.getElementById("submitButtonThree");
+                        }
+                        else if(number == 4){
+                            document.getElementById("submittedFour").innerHTML = "Thank you for booking this meeting!"
+                            firstNameLabelItem = document.getElementById("firstNameLabel4");
+                            firstNameItem = document.getElementById("firstName4");
+                            lastNameLabelItem = document.getElementById("lastNameLabel4");
+                            lastNameItem = document.getElementById("lastName4");
+                            emailNameItem = document.getElementById("emailName4");
+                            emailNameLabelItem = document.getElementById("emailNameLabel4");
+                            submitButton = document.getElementById("submitButtonFour");
+
+                        }
+                        firstNameLabelItem.parentNode.removeChild(firstNameLabelItem);
+                        firstNameItem.parentNode.removeChild(firstNameItem);
+                        lastNameLabelItem.parentNode.removeChild(lastNameLabelItem);
+                        lastNameItem.parentNode.removeChild(lastNameItem);
+                        emailNameLabelItem.parentNode.removeChild(emailNameLabelItem);
+                        emailNameItem.parentNode.removeChild(emailNameItem);
+                        submitButton.parentNode.removeChild(submitButton);
+
                     }
 
                 </script>
