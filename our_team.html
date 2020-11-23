@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="icon" href="Logo/icon.png" sizes="35x35" type="image/png">
         <title>Spack: Our Team Page</title>
         <meta name = "description" content = "Find our more about our team members!">
         <link rel="stylesheet"
@@ -12,17 +13,15 @@
             href = "styles.css" />
         <style>
             .bodyV2{
-                background-color: #e6cea3;
+                background-color: white;
                 font-family: "Comfortaa", serif;
-                color: #874000
-
+                color: rgb(114, 110, 110)
             }
             table {
                 width: 80%;
                 margin-top: 20px;
-                font-size: 25px;
-                background-color: #ffefd4;
-                color: #874000;
+                font-size: 1.5em;
+                background-color: white;
                 border-radius: 6px;
                 display: inline;
             }
@@ -41,19 +40,19 @@
                 padding-left: 20px;
                 padding-right: 20px;
                 text-decoration: none;
-                background-color: #ffefd4;
-                color: #874000;
+                background-color: transparent;
+                color: rgb(114, 110, 110);
                 border-radius: 7px;
             }
             .header-class:hover {
-                background: #ecd7b4;
+                background: rgb(235, 230, 230);
             }
-
             .container{
-                max-width: 900px;
+                max-width: 70%;
                 margin: 0 auto;
-                padding: 0 1em;
-                font-size: 10mm;
+                font-size: 28px;
+                font-weight: bold;
+                line-height: 1.4;
                 border-radius: 30%;
             }
             .section-header{
@@ -79,12 +78,11 @@
             
             .main-footer-container{
                 display: flex;
-                align-items:center;
+                align-items: center;
             }
             .main-footer-container ul{
                 flex-grow: 1;
                 text-align: end;
-
             }
             .button {
                 font-size: 20mm;
@@ -126,7 +124,6 @@
             .footer li{
                 padding: 0 .5em;
                 display: inline-block;
-
             }
 
             .footer img{
@@ -200,7 +197,7 @@
     </head>
 
     <body class = "bodyV2">
-        <a href="home_page.html" style = "background-color:#e6cea3;" class = "header-class"><img src="Logo/spack_logo.png"></a>
+        <a href="home_page.html" style = "background-color:transparent;" class = "header-class"><img src="Logo/spack_logo.png"></a>
         <table align = right>
             <colgroup>
                 <col style="width:20%">
@@ -239,7 +236,7 @@
                 <th>
                     <p>|</p>
                 </th>
-                <th class = "header-class">
+                <th>
                     <a href = "contact_us.html" id='contactLink' class = "header-class">Contact Us</a>
                 </th>
             </tr>
@@ -251,7 +248,7 @@
             <br>
             <br>
             <br>
-            <h1 class = "section-header">OUR TEAM</h1>
+            <h1 class = "section-header" style="color: black;">OUR TEAM</h1>
             <br>
             <p1>
                 Our team is very small and is made up of a total of 6 individuals wanting to make a
@@ -622,27 +619,27 @@
                 <!-- li stands for list item-->
                 <li> 
                     <a href = "https://www.youtube.com/" target = "_blank">
-                        <img src = "Images_our_team/youtube.png">
+                        <img src = "Images_our_team/youtube.png" style="float: left">
                    </a>
                 </li>
                 <li>
-                    <a href = "https://www.facebook.com/" target = "_blank">
+                    <a href = "https://www.facebook.com/" target = "_blank" style="float: left">
                         <img src = "Images_our_team/facebook_logo.png" >
                     </a>
                 
                 </li>
                 <li> 
-                    <a href = "https://www.instagram.com/" target = "_blank">
+                    <a href = "https://www.instagram.com/" target = "_blank" style="float: left">
                         <img src = "Images_our_team/Instagram.png" >
                     </a>
                 </li>
                 <li>
-                    <a href = "https://twitter.com/" target = "_blank">
+                    <a href = "https://twitter.com/" target = "_blank" style="float: left">
                         <img src = "Images_our_team/Twitter.png" >
                     </a>
                 </li>
                 <li>
-                    <a href = "https://www.whatsapp.com/?lang=en" target = "_blank">
+                    <a href = "https://www.whatsapp.com/?lang=en" target = "_blank" style="float: left">
                         <img src = "Images_our_team/whatsapp.png">
                     </a>
                 </li>
