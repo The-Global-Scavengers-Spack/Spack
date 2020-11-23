@@ -48,14 +48,6 @@ nav {
   background-color: burlywood;
 }
 
-#BasDePage {
-  background-image: url("/images/sweet-ice-cream-photography-SurmPrJ4Rts-unsplash.jpg");
-  background-size: 200vh 50vh;
-  background-color: burlywood;
-  opacity: 0.2;
-  border-radius: 5%;
-}
-
 .row {
   margin: 0;
 }
@@ -95,11 +87,11 @@ nav {
 }
 
 .carousel-caption h2 span {
-  color: coral;
+  color: rgb(236, 146, 28);
 }
 
 .carousel-caption a {
-  background: coral;
+  background: rgb(236, 146, 28);
   padding: 15px 35px;
   display: inline-block;
   margin-top: 15px;

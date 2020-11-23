@@ -7,26 +7,24 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="description" content="" />
-    <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
+    <meta name="Sonia Wang Dané" />
     <meta name="generator" content="Jekyll v3.8.5" />
     <title>Spack</title>
-
+    <!-- calling the css bootstrap files -->
     <link
       href="css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <!--link qui permettra de charger les goocles icons-->
+    <!--link to have acces to google icons and fonts-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -62,35 +60,26 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
-      rel="icon"
-      href="images_home/logo_temp3.png"
-      sizes="32x32"
-      type="image/png"
-    />
+    <!-- allow to have the slack logo in on the tap page -->
+    <link rel="icon" href="Logo/icon.png" sizes="35x35" type="image/png" />
 
-    <!-- Calling jquery first -->
+    <!-- Calling jquery Bootstrap-->
     <script
       language="JavaScript"
       type="text/javascript"
       src="js_home/bootstrap/bootstrap.min.js"
     ></script>
-    <!-- Carousel -->
 
-    <!-- Custom styl     es for this template -->
+    <!-- calling the css file we are using on this page -->
     <link rel="stylesheet" type="text/css" href="css_home/home.css" />
     <link rel="stylesheet" type="text/css" href="css_home/animate.css" />
-    <!--
-    <script src="js_home/toggleNavBarColor.js"></script>
-  
-    <script src="js_home/navbarColorChange.js"></script>
-    -->
+
     <script src="js_home/carouselSlider.js"></script>
   </head>
   <body>
     <div id="border_nav">
       <nav class="navbar navbar-expand-md navbar-light fixed-top">
-        <a class="navbar-brand" href="#" id="logoImage"
+        <a class="navbar-brand" href="home_page.html" id="logoImage"
           ><img
             src="images_home/logo_temp3.png"
             alt="Logo"
@@ -98,7 +87,7 @@
             width="80"
           />
         </a>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="home_page.html">
           <div id="Title">Spack</div>
         </a>
         <button
@@ -115,21 +104,20 @@
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
-            <!--navbar-center -->
-            <li class="nav-item active">
-              <a class="nav-link" href="Home_page.html"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="product.html">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="app.html">App</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Our team</a>
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our_team.html">Our team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_us.html">Contact Us</a>
             </li>
           </ul>
 
@@ -159,8 +147,6 @@
     <main role="main" class="container-fluid" style="padding: 0">
       <div id="carouselDiv" class="row" style="padding-bottom: 95vh">
         <div class="col-lg-12" style="padding: 0; position: absolute; top: 0">
-          <!--img   class="img-fluid" src="/images_home/sweet-ice-cream-photography-SurmPrJ4Rts-unsplash.jpg"
-                              alt="imagePub"-->
           <div
             id="carouselExampleIndicators"
             class="carousel slide"
@@ -232,30 +218,6 @@
                   </p>
                 </div>
               </div>
-
-              <!--div class="carousel-item">
-                <div
-                  class="banner"
-                  style="background-image: url(images_home/bg12.jpg)"
-                ></div>
-                <div class="carousel-caption">
-                  <h2 class="animated zoomIn" style="animation-delay: 1s">
-                    Make my back <span> Happy </span>
-                  </h2>
-                  <h3 class="animated fadeInLeft" style="animation-delay: 2s">
-                    <img
-                      src="images_home/happy_back.png"
-                      height="200"
-                      width="200"
-                      class="img-fluid"
-                      alt="Slack device"
-                    />
-                  </h3>
-                  <p class="animated zoomIn" style="animation-delay: 3s">
-                    <a href="#">Contact us </a>
-                  </p>
-                </div>
-              </div-->
             </div>
             <a
               class="carousel-control-prev"
